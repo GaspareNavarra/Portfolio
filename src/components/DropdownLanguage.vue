@@ -1,5 +1,5 @@
 <template>
-  <div id="langContainer" class="dropdown dropdownLang ">
+  <div id="langContainer" class="dropdown">
     <a
       class="btn btn-primary dropdown-toggle"
       :class="selectedLang()"

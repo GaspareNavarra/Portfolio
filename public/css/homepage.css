@@ -91,7 +91,7 @@ body {
   width: fit-content;
   height: fit-content;
   padding: 0;
-  right: 110px;
+  right: 65px;
 }
 .it {
   background-image: url(../img/it_flag.png);
@@ -131,6 +131,9 @@ body {
 #menuLang, #dropdownMenuButton {
   border: solid 1px gray;
   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+#menuLang {
+  margin-left: -74px;
 }
 .active, .dropdown-item:focus, .dropdown-item:hover {
   background-color: black!important;

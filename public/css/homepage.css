@@ -94,10 +94,10 @@ body {
   right: 110px;
 }
 .it {
-  background-image: url(../static/img/it_flag.png);
+  background-image: url(../img/it_flag.png);
 }
 .en {
-  background-image: url(../static/img/en_flag.png);
+  background-image: url(../img/en_flag.png);
 }
 .en, .it {
 	background-repeat: no-repeat;

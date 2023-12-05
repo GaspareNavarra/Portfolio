@@ -45,6 +45,7 @@ body {
   animation: flicker 5s linear infinite;
   animation-delay: 2s;
   top: 245px;
+  z-index: 1;
   /* animation: none; */
 }
 .title1, .title2 {
@@ -126,6 +127,8 @@ body {
   
   height: 56px;
   line-height: 0px;
+  justify-content: center;
+  align-items: center;
 }
 .selector div {
   position: relative;
@@ -145,6 +148,12 @@ body {
   transition: 0.5s;
   pointer-events: none;
   filter: drop-shadow(0 5px 25px #ff0026);
+  left: 138px;
+  width: 99px;
+  z-index: 1;
+}
+#pageSelectorMobile {
+  display: none;
 }
 /*--------------------------------------------------------------------------------------------------------*/
 @keyframes flicker {
@@ -174,8 +183,29 @@ body {
   #langContainer {
     right: 18px;
   }
-  #pageSelector {
-    display: none;
+  #pageSelectorWeb {
+    /* display: none; */
+    margin-top: 12px;
+    padding: 0;
+  }
+  #pageSelectorMobile {
+    /* display: block; */
+  }
+  .title_position {
+    margin-top: 56px;
+    z-index: unset;
+  }
+  .neon {
+    font-size: 54px;
+    letter-spacing: 7px;
+    top: 120px;
+  }
+  #marker {
+    left: 10px;
+    width: 99px;
+  }
+  #Logo {
+    padding: 8px 0px 0px 0px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {

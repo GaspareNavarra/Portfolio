@@ -1,6 +1,7 @@
 <template>
   <div id="homepage" class=" row no-margin">
     <nav-bar></nav-bar>
+    
     <router-view></router-view>
   </div>
 

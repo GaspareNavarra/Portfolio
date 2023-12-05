@@ -1,6 +1,6 @@
 <template>
     <nav id="NavBar" class="row navbar navbar-expand-lg navbar-dark bg-dark no-margin">
-        <div class="col-sm-4">
+        <div id="Logo" class="col-sm-4">
             <img :src="Logo" class="img-size"/>
         </div>
         <page-selector></page-selector>

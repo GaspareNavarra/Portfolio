@@ -1,9 +1,11 @@
 <template>
-  <div id="pageSelectorWeb" class="col-sm-4 selector">
-    <div @click="indicator();linkTo('/Home')">Home</div>
-    <div @click="indicator();linkTo('/AboutMe')">About me</div>
-    <div @click="indicator();linkTo('/MyJob')">My job</div>
-    <div id="marker"></div>
+  <div id="pageSelectorWeb" class="col-sm-4">
+    <div class="selector">
+        <div id="marker"></div>
+        <div @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
+        <div @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
+        <div @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
+    </div>
   </div>
   <div id="pageSelectorMobile">
     

@@ -44,7 +44,7 @@ body {
   line-height: 0.70em;
   animation: flicker 5s linear infinite;
   animation-delay: 2s;
-  top: 245px;
+  top: 150px;
   z-index: 1;
   /* animation: none; */
 }
@@ -142,14 +142,11 @@ body {
   position: absolute;
   bottom: 0;
   height: 100%;
-  width: 99px;
   border-bottom: 5px solid #ff0026;
   background: linear-gradient(0deg, #ff002633, transparent);
   transition: 0.5s;
   pointer-events: none;
   filter: drop-shadow(0 5px 25px #ff0026);
-  left: 138px;
-  width: 99px;
   z-index: 1;
 }
 #pageSelectorMobile {
@@ -190,13 +187,11 @@ body {
     display: block;
   }
   .title_position {
-    margin-top: 56px;
     z-index: unset;
   }
   .neon {
     font-size: 54px;
     letter-spacing: 7px;
-    top: 25px;
   }
   #Logo {
     padding: 8px 0px 0px 0px;

@@ -2,9 +2,9 @@
   <div id="pageSelectorWeb" class="col-sm-4">
     <div class="selector">
         <div id="marker"></div>
-        <div @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
-        <div @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
-        <div @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
+        <div id="Home" @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
+        <div id="AboutMe" @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
+        <div id="MyJob" @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
     </div>
   </div>
   <div id="pageSelectorMobile">
@@ -20,7 +20,16 @@ export default {
 
       marker.style.left = event.target.offsetLeft + 'px';
       marker.style.width = event.target.offsetWidth + 'px';
+    },
+    setMarkerPosition() {
+      let marker = document.querySelector('#marker');
+
+      marker.style.left = document.querySelector('#Home').offsetLeft + 'px';
+      marker.style.width = document.querySelector('#Home').offsetWidth + 'px';
     }
   },
+  mounted() {
+    this.setMarkerPosition();
+  }
 }
 </script>

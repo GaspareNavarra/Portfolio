@@ -184,13 +184,10 @@ body {
     right: 18px;
   }
   #pageSelectorWeb {
-    /* display: none; */
-    margin-top: 12px;
-    padding: 0;
-    width: 100vw;
+    display: none;
   }
   #pageSelectorMobile {
-    /* display: block; */
+    display: block;
   }
   .title_position {
     margin-top: 56px;
@@ -199,11 +196,7 @@ body {
   .neon {
     font-size: 54px;
     letter-spacing: 7px;
-    top: 120px;
-  }
-  #marker {
-    left: 10px;
-    width: 99px;
+    top: 25px;
   }
   #Logo {
     padding: 8px 0px 0px 0px;

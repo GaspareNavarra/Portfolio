@@ -1,18 +1,20 @@
 <template>
-  <div id="langContainer" class="dropdown">
-    <a
-      class="btn btn-primary dropdown-toggle"
-      :class="selectedLang()"
-      id="dropdownMenuButton"
-      data-bs-toggle="dropdown"
-      aria-expanded="active">
-      {{$t('selectedLang')}}
-    </a>
-    <ul id="menuLang" class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton" role="menu">
-      <li v-for="lang in langList" :key="lang.language">
-        <a :class="getClassLanguage(lang.language)" class="dropdown-item" @click="changeLang(lang.language);" href="javascript:void(0)">{{lang.label}} <span v-show="showArrow(lang.language)">{{'<=='}}</span> </a>
-      </li>
-    </ul>
+  <div class="col-sm-4">
+    <div id="langContainer" class="dropdown">
+      <a
+        class="btn btn-primary dropdown-toggle"
+        :class="selectedLang()"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="active">
+        {{$t('selectedLang')}}
+      </a>
+      <ul id="menuLang" class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton" role="menu">
+        <li v-for="lang in langList" :key="lang.language">
+          <a :class="getClassLanguage(lang.language)" class="dropdown-item" @click="changeLang(lang.language);" href="javascript:void(0)">{{lang.label}} <span v-show="showArrow(lang.language)">{{'<=='}}</span> </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

@@ -187,6 +187,7 @@ body {
     /* display: none; */
     margin-top: 12px;
     padding: 0;
+    width: 100vw;
   }
   #pageSelectorMobile {
     /* display: block; */

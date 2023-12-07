@@ -21,15 +21,19 @@ export default {
       marker.style.left = event.target.offsetLeft + 'px';
       marker.style.width = event.target.offsetWidth + 'px';
     },
-    setMarkerPosition() {
+    setMarkerPosition(id) {
+      if(id == '') {id = 'Home';}
       let marker = document.querySelector('#marker');
 
-      marker.style.left = document.querySelector('#Home').offsetLeft + 'px';
-      marker.style.width = document.querySelector('#Home').offsetWidth + 'px';
+      marker.style.left = document.querySelector('#' + id).offsetLeft + 'px';
+      marker.style.width = document.querySelector('#' + id).offsetWidth + 'px';
     }
   },
   mounted() {
-    this.setMarkerPosition();
+    let splitted_url = window.location.href.split('/');
+    let last_piece_url = splitted_url.length;
+    let page = splitted_url[last_piece_url - 1];
+    this.setMarkerPosition(page);
   }
 }
 </script>

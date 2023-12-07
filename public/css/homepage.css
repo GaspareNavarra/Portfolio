@@ -26,6 +26,7 @@ body {
 }
 .title_position {
   height: 100vh;
+  z-index: unset!important;
 }
 .neon {
   font-family: 'Game Of Squids', sans-serif;
@@ -185,9 +186,6 @@ body {
   }
   #pageSelectorMobile {
     display: block;
-  }
-  .title_position {
-    z-index: unset;
   }
   .neon {
     font-size: 54px;

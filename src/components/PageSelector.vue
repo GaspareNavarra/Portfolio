@@ -7,9 +7,6 @@
         <div id="MyJob" @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
     </div>
   </div>
-  <div id="pageSelectorMobile">
-    
-  </div>
 </template>
 <script>
 export default {

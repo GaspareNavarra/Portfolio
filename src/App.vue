@@ -3,14 +3,16 @@
     <nav-bar></nav-bar>
     
     <router-view></router-view>
+    <bottom-bar></bottom-bar>
   </div>
 
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
+import BottomBar from './components/BottomBar.vue';
 export default {
-  components: { NavBar },
+  components: { NavBar, BottomBar },
   provide() {
     return{
       linkTo: this.linkTo,

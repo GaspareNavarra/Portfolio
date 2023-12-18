@@ -1,8 +1,8 @@
 <template>
     <div class="title_position">
         <div class="neon">
-            <div class="title1">Gaspare</div>
-            <div class="title2">Navarra</div>
+            <span class="title1">Gaspare</span>
+            <span class="title2">Navarra</span>
         </div>
     </div>
 </template>

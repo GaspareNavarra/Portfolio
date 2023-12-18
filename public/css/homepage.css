@@ -43,7 +43,7 @@ body {
   width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
   line-height: 0.70em;
-  animation: flicker 5s linear infinite;
+  animation: lamp 5s linear infinite;
   animation-delay: 2s;
   top: 150px;
   z-index: 1;
@@ -51,7 +51,7 @@ body {
 }
 .title1, .title2 {
   color: gray;
-  animation: lamp 5s linear infinite;
+  animation: flicker 5s linear infinite;
   animation-delay: 2s;
 }
 .no-padding {
@@ -272,7 +272,7 @@ body {
 /*--------------------------------------------------------------------------------------------------------*/
 @keyframes flicker {
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
-    color: #0e3742;
+    color: gray;
     text-shadow: none;
   }
   18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {

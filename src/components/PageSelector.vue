@@ -2,9 +2,9 @@
   <div id="pageSelectorWeb" class="col-sm-4">
     <div class="selector">
         <div id="marker"></div>
-        <div id="Home" @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
-        <div id="AboutMe" @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
-        <div id="MyJob" @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
+        <div id="HomePC" @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
+        <div id="AboutMePC" @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
+        <div id="MyJobPC" @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
     </div>
   </div>
 </template>
@@ -22,8 +22,8 @@ export default {
       if(id == '') {id = 'Home';}
       let marker = document.querySelector('#marker');
 
-      marker.style.left = document.querySelector('#' + id).offsetLeft + 'px';
-      marker.style.width = document.querySelector('#' + id).offsetWidth + 'px';
+      marker.style.left = document.querySelector('#' + id + 'PC').offsetLeft + 'px';
+      marker.style.width = document.querySelector('#' + id + 'PC').offsetWidth + 'px';
     }
   },
   mounted() {

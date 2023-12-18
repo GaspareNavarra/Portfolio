@@ -21,7 +21,7 @@ body {
 }
 #homepage {
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
 }
 .title_position {
@@ -316,6 +316,9 @@ body {
   .title {
     width: unset;
     margin: unset;
+  }
+  #homepage {
+    width: 100dvh!important;
   }
   /* .hamburger-menu {
     display: block;

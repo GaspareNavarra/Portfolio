@@ -25,7 +25,7 @@ body {
   overflow: hidden;
 }
 .title_position {
-  height: 100vh;
+  height: 80vh;
   z-index: unset!important;
 }
 .neon {
@@ -219,6 +219,32 @@ body {
 .activePage {
   opacity: 1!important;
 }
+#SocialMedia {
+  width: fit-content;
+  height: fit-content;
+}
+.instagram, .gmail {
+  font-size: 40px!important;
+}
+#Instagram {
+  display: flex;
+  text-decoration: none;
+}
+.bxl-instagram {
+  border-radius: 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.social_tag {
+  line-height: 37px;
+  padding-left: 5px;
+}
+#gMail {
+  display: flex;
+}
+.gmail_size {
+  height: 40px;
+}
 /* .hamburger-menu {
   display: none;
   margin: 0;
@@ -323,6 +349,16 @@ body {
   } */
   .title2 {
     margin-top: 8px!important;
+  }
+  .title_position {
+    margin-top: -220px;
+    height: 50vh;
+  }
+  #SocialMedia {
+    width: 100%;
+  }
+  #Instagram, #gMail {
+    justify-content: center;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {

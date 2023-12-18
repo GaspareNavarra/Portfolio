@@ -1,30 +1,29 @@
 <template>
   <div id="pageSelectorWeb" class="col-sm-4">
     <div class="selector">
-        <div id="marker"></div>
-        <div id="HomePC" @click="indicator();linkTo('/Home')">{{ $t('home') }}</div>
-        <div id="AboutMePC" @click="indicator();linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
-        <div id="MyJobPC" @click="indicator();linkTo('/MyJob')">{{ $t('myjob') }}</div>
+        <div id="marker" :style="{left: left, width: width}"></div>
+        <div id="Home" @click="setMarkerPosition('Home');linkTo('/Home')">{{ $t('home') }}</div>
+        <div id="AboutMe" @click="setMarkerPosition('AboutMe');linkTo('/AboutMe')">{{ $t('aboutme') }}</div>
+        <div id="MyJob" @click="setMarkerPosition('MyJob');linkTo('/MyJob')">{{ $t('myjob') }}</div>
     </div>
   </div>
 </template>
 <script>
 export default {
   inject: ['linkTo'],
+  data() {
+    return {
+      left: 0,
+      width: 0
+    }
+  },
   methods: {
-    indicator() {
-      let marker = document.querySelector('#marker');
-
-      marker.style.left = event.target.offsetLeft + 'px';
-      marker.style.width = event.target.offsetWidth + 'px';
-    },
     setMarkerPosition(id) {
       if(id == '') {id = 'Home';}
-      let marker = document.querySelector('#marker');
 
-      marker.style.left = document.querySelector('#' + id + 'PC').offsetLeft + 'px';
-      marker.style.width = document.querySelector('#' + id + 'PC').offsetWidth + 'px';
-    }
+      this.left = document.querySelector('#' + id).offsetLeft + 'px';
+      this.width = document.querySelector('#' + id).offsetWidth + 'px';
+    },
   },
   mounted() {
     let splitted_url = window.location.href.split('/');

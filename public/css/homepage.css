@@ -49,12 +49,13 @@ body {
   z-index: 1;
   /* animation: none; */
 }
-.title {
+.title1, .title2 {
   color: gray;
-  width: 46%;
-  margin: auto;
   animation: flicker 5s linear infinite;
   animation-delay: 2s;
+}
+.title2 {
+  margin-top: 15px;
 }
 .no-padding {
   padding: 0;
@@ -140,6 +141,7 @@ body {
   color: #fff;
   font-weight: 400;
   letter-spacing: 0.1em;
+  font-family: 'Game Of Squids', sans-serif;
 }
 #marker {
   position: absolute;
@@ -313,16 +315,15 @@ body {
     padding: 8px 0px 0px 0px;
     /* margin-left: 45px; Hamburger menu*/
   }
-  .title {
-    width: unset;
-    margin: unset;
-  }
   #homepage {
     height: 100dvh!important;
   }
   /* .hamburger-menu {
     display: block;
   } */
+  .title2 {
+    margin-top: 8px!important;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
 

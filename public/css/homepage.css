@@ -49,8 +49,10 @@ body {
   z-index: 1;
   /* animation: none; */
 }
-.title1, .title2 {
+.title {
   color: gray;
+  width: 46%;
+  margin: auto;
   animation: flicker 5s linear infinite;
   animation-delay: 2s;
 }
@@ -310,6 +312,10 @@ body {
   #Logo {
     padding: 8px 0px 0px 0px;
     /* margin-left: 45px; Hamburger menu*/
+  }
+  .title {
+    width: unset;
+    margin: unset;
   }
   /* .hamburger-menu {
     display: block;

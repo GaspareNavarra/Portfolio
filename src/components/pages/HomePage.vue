@@ -12,18 +12,12 @@
         </a>
         <div id="gMail">
             <!-- <i class="bx bxl-gmail gmail"></i> -->
-            <img :src="GMAIL" class="gmail_size">
+            <img src="../../../public/img/gmail.png" class="gmail_size">
             <div class="social_tag">gasparenavarra2@gmail.com</div>
         </div>
     </div>
 </template>
 <script>
-import GMAIL from '../../../public/img/gmail.png';
 export default {
-    data() {
-        return {
-            GMAIL: GMAIL
-        }
-    }
 }
 </script>

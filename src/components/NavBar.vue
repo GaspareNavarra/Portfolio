@@ -9,7 +9,7 @@
         <div id="Logo" class="col-sm-4">
             <img :src="Logo" class="img-size"/>
         </div>
-        <page-selector></page-selector>
+        <page-selector :navigationIsShown="navigationIsShown"></page-selector>
         <dropdown-language></dropdown-language>
     </nav>
 </template>
@@ -19,6 +19,7 @@ import PageSelector from './PageSelector.vue';
 import Logo from '../../public/img/Gn-Logo.png';
 export default {
     components: { DropdownLanguage, PageSelector },
+    props: ['navigationIsShown'],
     data() {
         return {
             Logo: Logo

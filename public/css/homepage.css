@@ -222,6 +222,7 @@ body {
 #SocialMedia {
   width: fit-content;
   height: fit-content;
+  z-index: 1;
 }
 .instagram, .gmail {
   font-size: 40px!important;

@@ -1,5 +1,5 @@
 <template>
-    <div id="pageSelectorMobile">
+    <div id="pageSelectorMobile" v-if="navigationIsShown">
         <nav class="downBar">
             <ul class="downBar_links">
                 <li class="downBar_link">
@@ -19,6 +19,7 @@
 <script>
 export default {
     inject: ['linkTo'],
+    props: ['navigationIsShown'],
     data() {
         return {
             left: 0,
@@ -48,10 +49,12 @@ export default {
         }
     },
     mounted() {
-        let splitted_url = window.location.href.split('/');
-        let last_piece_url = splitted_url.length;
-        let page = splitted_url[last_piece_url - 1];
-        this.setMarkerPosition(page);
+        if(this.navigationIsShown) {
+            let splitted_url = window.location.href.split('/');
+            let last_piece_url = splitted_url.length;
+            let page = splitted_url[last_piece_url - 1];
+            this.setMarkerPosition(page);
+        }
     }
 }
 </script>

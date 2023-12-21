@@ -1,11 +1,10 @@
 <template>
   <div id="homepage" class=" row no-margin">
-    <nav-bar></nav-bar>
+    <nav-bar :navigationIsShown="navigationIsShown"></nav-bar>
     
     <router-view></router-view>
-    <bottom-bar></bottom-bar>
+    <bottom-bar :navigationIsShown="navigationIsShown"></bottom-bar>
   </div>
-
 </template>
 
 <script>
@@ -16,11 +15,20 @@ export default {
   provide() {
     return{
       linkTo: this.linkTo,
+      disableNavigation: this.disableNavigation
+    }
+  },
+  data() {
+    return {
+      navigationIsShown: true
     }
   },
   methods: {
     linkTo(path) {
       this.$router.push(path);
+    },
+    disableNavigation() {
+      this.navigationIsShown = false;
     }
   }
 }

@@ -3,6 +3,9 @@
     <nav-bar :navigationIsShown="navigationIsShown"></nav-bar>
     
     <router-view></router-view>
+      <!-- <transition name="fade">
+        <component :is="Component"></component>
+      </transition> -->
     <bottom-bar :navigationIsShown="navigationIsShown"></bottom-bar>
   </div>
 </template>

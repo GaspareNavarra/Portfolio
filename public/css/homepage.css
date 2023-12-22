@@ -24,6 +24,13 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+#AboutMePage {
+  z-index: 1;
+  height: 100vh;
+  /* font-family: 'Game Of Squids', sans-serif; */
+  font-family: 'Jura';
+  font-size: 45px;
+}
 .title_position {
   height: 80vh;
   z-index: unset!important;
@@ -64,6 +71,7 @@ body {
   padding-left: 0;
 }
 #langContainer {
+  font-family: 'Jura';
   position: absolute;
   width: fit-content;
   height: fit-content;
@@ -99,6 +107,9 @@ body {
 }
 .navbar {
   height: 56px;
+}
+#NavBar {
+  z-index: 1000;
 }
 .no-margin {
   margin: 0;
@@ -239,12 +250,55 @@ body {
 .social_tag {
   line-height: 37px;
   padding-left: 5px;
+  z-index: 1;
 }
 #gMail {
   display: flex;
 }
 .gmail_size {
+  z-index: 1;
   height: 40px;
+}
+.bx {
+  z-index: 1;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+.arrow-down {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forward {
+  text-align: center;
+}
+.user-size {
+  font-size: 135px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.vertical-bar {
+  color: #ff0026;
+  opacity: 1;
+  border-top: solid 5px;
+  transform: rotate(-90deg);
+  padding: 135px;
+}
+.vertical-bar-container {
+  padding-left: 35px;
+  width: 100px;
+}
+#Biography {
+  display: flex;
+  margin-top: 125px;
+  justify-content: center;
 }
 /* .hamburger-menu {
   display: none;
@@ -345,6 +399,12 @@ body {
   #homepage {
     height: 100dvh!important;
   }
+  #HomePage {
+    height: inherit;
+  }
+  #AboutMePage {
+    height: 100dvh!important;
+  }
   /* .hamburger-menu {
     display: block;
   } */
@@ -352,8 +412,8 @@ body {
     margin-top: 8px!important;
   }
   .title_position {
-    margin-top: -220px;
-    height: 50vh;
+    margin-top: -55px;
+    height: 65vh;
   }
   #SocialMedia {
     width: 100%;
